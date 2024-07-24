@@ -42,7 +42,7 @@ class NoteDelete(generics.DestroyAPIView):
         return Note.objects.filter(author=user)
 
 
-# Views for creting Users
+# Views for creating Users
 class CreateUserView(generics.CreateAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
